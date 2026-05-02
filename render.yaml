@@ -12,9 +12,8 @@ services:
       - key: MONGODB_DB_NAME
         value: teacher_fairness
 
-  - type: web
+  - type: static
     name: teacher-fairness-frontend
-    env: static
     rootDir: frontend
     plan: free
     buildCommand: npm install && npm run build
